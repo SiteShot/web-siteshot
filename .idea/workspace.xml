@@ -60,8 +60,8 @@
       <file leaf-file-name="_home-banner.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/views/_home-banner.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1399177" vertical-offset="0" max-vertical-offset="2261">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.7835391" vertical-offset="0" max-vertical-offset="2278">
+              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -830,8 +830,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/views/_home-banner.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1399177" vertical-offset="0" max-vertical-offset="2261">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.7835391" vertical-offset="0" max-vertical-offset="2278">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
           <folding />
         </state>
       </provider>

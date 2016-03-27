@@ -2023,7 +2023,7 @@ html {
 
 .banner-mockup {
   height: 340px;
-  background: white;
+  background-image: url("../images/mock-test.png");
   border-radius: 4px 4px 0 0;
   box-shadow: 0 0 80px rgba(60, 75, 91, 0.4); }
 
