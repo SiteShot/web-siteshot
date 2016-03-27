@@ -1,0 +1,127 @@
+.home-banner {
+  position: relative;
+  height: 840px;
+  padding: 80px 0 0;
+  overflow: hidden;
+  color: white;
+}
+
+.home-banner__shadow {
+  position: absolute;
+  z-index: 10;
+  height: 2px;
+  left: 40px;
+  right: 40px;
+  bottom: 0;
+  background: rgba(black,0.2);
+}
+
+.home-banner__title {
+  @include font-size(6.4);
+  line-height: 1.2;
+  color: white;
+  text-align: center;
+}
+.home-banner__beta {
+  @include font-size(1.6);
+  text-align: center;
+  color: #e05073;
+  background: white;
+  font-weight: bold;
+  margin: 40px auto;
+  max-width: 300px;
+  border-radius: 4px;
+  line-height: 24px;
+  padding: 8px 24px;
+}
+.home-banner__message {
+  @include font-size(2.2);
+  line-height: 1.4;
+  color: white;
+  text-align: center;
+}
+
+
+.home-banner__mockup {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 40px;
+  width: 100%;
+}
+
+
+.banner-mockup {
+  height: 340px;
+  background: white;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 0 80px rgba(#3c4b5b,0.4);
+}
+
+html.csstransitions {
+  .banner-mockup {
+    transition: all 400ms ease-out;
+    opacity: 0.6;
+    transform: translateY(120px);
+  }
+  .banner-mockup--animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+//-------o--------o--------
+
+.signup {
+  max-width: 520px;
+  margin: 0 auto;
+}
+.signup__heading {
+  @include font-size(3.2);
+  text-align: center;
+  line-height: 1.4;
+  margin: 0 0 40px;
+}
+.signup__input {}
+
+
+.email-validation {
+  height: 40px;
+  position: relative;
+  padding: 0 160px 0 0;
+}
+
+.email-validation__element {
+  position: relative;
+}
+.email-validation__input {
+  padding-right: 48px;
+}
+.email-validation__indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px 16px;
+  width: 48px;
+  height: 40px;
+}
+
+
+.email-validation__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 160px;
+  padding: 0 0 0 12px;
+}
+
+
+.indicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: $color-green;
+}
+

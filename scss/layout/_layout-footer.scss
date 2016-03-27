@@ -1,0 +1,15 @@
+// footer
+.shnappy-footer {
+  position: relative;
+  padding: 16px;
+  line-height: 24px;
+  color: white;
+  font-weight: bold;
+  @include font-size(1.6);
+}
+.shnappy-footer__shnappy {
+  float: left;
+}
+.shnappy-footer__name {
+  float: right;
+}
