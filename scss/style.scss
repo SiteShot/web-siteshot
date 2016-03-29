@@ -22,8 +22,8 @@ $breakpoint-3: 640px;
 
 // _icon
 @import "icon/_custom-loading";
-@import "icon/_shnappy-camera";
-@import "icon/_shnappy-icons";
+//@import "icon/_shnappy-camera";
+//@import "icon/_shnappy-icons";
 @import "icon/_icons";
 
 // _chrome
@@ -35,7 +35,7 @@ $breakpoint-3: 640px;
 // _components
 @import "components/_typography";
 @import "components/_module";
-@import "components/_module-sidebar";
+//@import "components/_module-sidebar";
 @import "components/_button";
 @import "components/_button-pattern";
 @import "components/_dropdown";
@@ -44,12 +44,14 @@ $breakpoint-3: 640px;
 @import "components/_form-credit";
 @import "components/_form-search";
 @import "components/_form-password";
-@import "components/_breadcrumb";
-@import "components/_switch";
-@import "components/_switch-control";
-@import "components/_modal";
-@import "components/_modal-upgrade";
+//@import "components/_breadcrumb";
+//@import "components/_switch";
+//@import "components/_switch-control";
+//@import "components/_modal";
+//@import "components/_modal-upgrade";
 
 // _views
 //@import "views/";
 @import "views/_home-banner";
+@import "views/_signup";
+@import "views/_content";

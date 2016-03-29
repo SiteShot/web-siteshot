@@ -54,41 +54,30 @@ $font-mono: consolas, monaco, courier, 'courier new';
 // font-size
 // make a font with @font-family with these? bold:semibold bla bla
 
-$fontsize-h1: 2.4;
-$fontsize-h2: 2.0;
-$fontsize-h3: 1.8;
-$fontsize-h4: 1.6;
+$fontsize-h1: 2.8;
+$fontsize-h2: 2.4;
+$fontsize-h3: 2;
+$fontsize-h4: 1.8;
 $fontsize-h5: 1.4;
 
-.typography {
-  //max-width: 800px;
-  margin: 0 auto;
-  font-size: 20px;
-  @include font-size(1.4);
-  line-height: 1.4;
-}
 
 // font-size
-html { font-size: 62.5%; }
+html {
+  font-size: 62.5%;
+}
 body {
   @include font-size(1.4);
   font-family: $font-family;
   line-height: 1.2;
   color: #333;
+  text-rendering: optimizeLegibility;
 }
 
 // setting defaults
-body {text-rendering: optimizeLegibility;}
 body,
 input,
 button {-webkit-font-smoothing: antialiased;}
 
-blockquote {
-  border-left: 4px solid $color-border-light;
-  padding: 0 0 0 24px;
-  font-style: italic;
-  @include font-size(1.8);
-}
 
 h1 {@include font-size($fontsize-h1);}
 h2 {@include font-size($fontsize-h2);}
@@ -110,6 +99,12 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1.2;
   font-family: $font-family;
 }
+
+.heading-size-1 {@include font-size($fontsize-h1);}
+.heading-size-2 {@include font-size($fontsize-h2);}
+.heading-size-3 {@include font-size($fontsize-h3);}
+.heading-size-4 {@include font-size($fontsize-h4);}
+.heading-size-5 {@include font-size($fontsize-h5);}
 
 em,
 .text-italic {
@@ -156,13 +151,6 @@ a {
   display: block;
 }
 
-/*
-.text-mono {
-  font-family: $font-family-mono;
-  @include font-size($fontsize-code);
-}
-*/
-
 
 img {
   display: block;
@@ -188,9 +176,3 @@ pre {
     display: block !important;
   }
 }
-
-.heading-size-1 {@include font-size($fontsize-h1);}
-.heading-size-2 {@include font-size($fontsize-h2);}
-.heading-size-3 {@include font-size($fontsize-h3);}
-.heading-size-4 {@include font-size($fontsize-h4);}
-.heading-size-5 {@include font-size($fontsize-h5);}
