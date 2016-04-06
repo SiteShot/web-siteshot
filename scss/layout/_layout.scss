@@ -34,13 +34,13 @@ html {
 }
 
 
-$first-color: #557ba0;//#c05a89;
-$last-color: #f55062;
+$first-color: #e91e63;//#c05a89;
+$last-color: #a526a7;
 
 .layout__banner {
   padding-top: 56px;
   background-position:center;
-  @include horizontalGradient($first-color,$last-color);
+  @include verticalGradient($first-color,$last-color);
 }
 .layout__banner-grid {
   width: 100%;
@@ -59,7 +59,6 @@ $last-color: #f55062;
   background: white;
 }
 .layout__section--border {
-  border-top: 2px solid $color-border-light;
   border-bottom: 2px solid $color-border-light;
 }
 

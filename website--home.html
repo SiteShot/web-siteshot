@@ -24,6 +24,7 @@
 
     <div class="header-layout">
       <div class="header-layout__logo">
+        <!--
         <div class="header-logo header-logo--active">
           <div class="header-logo__mark">
             <div class="aperture aperture--32 aperture--white">
@@ -33,6 +34,13 @@
           </div>
           <a class="header-logo__text" href="studio--clients.html">SiteShot</a>
         </div>
+        -->
+
+        <div class="header-logo header-logo--active">
+          <div class="header-logo__mark"></div>
+          <a class="header-logo__text" href="studio--clients.html">SiteShot</a>
+        </div>
+
       </div>
       <div class="header-layout__signup">
         <button class="button button--white-stroke button--40">
@@ -73,7 +81,7 @@
 <div class="layout__container">
 
   <!-- email section 1 -->
-  <div class="layout__section layout__section--white">
+  <div class="layout__section layout__section--white layout__section--border">
     <div class="center center--1120">
 
 
@@ -117,109 +125,54 @@
     </div>
   </div>
 
-  <div class="layout__section layout__section--white layout__section--border">
-    <div class="center center--1120">
-
-      <div class="content-block content-block--left">
-        <div class="content-block__content">
-          <div class="typography typography--large">
-            <h2>Why do I need SiteShot?</h2>
-            <p>Checking your website for visual changes across multiple browsers, resolutions, sizes is a time consuming process that can take hours. SiteShot is designed to remove that process, and let you deploy with confidence.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="content-block content-block--right">
-        <div class="content-block__content">
-          <div class="typography typography--large">
-            <h2>How does SiteShot work?</h2>
-            <p>SiteShot takes a picture of selected pages from your website and compares them between with past versions.</p>
-            <p>If any differences are spotted, SiteShot will then highlight the changes, and inform you what has changed.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="content-block content-block--left">
-        <div class="content-block__content">
-          <div class="typography typography--large">
-            <h2>Does SiteShot need access to my code?</h2>
-            <p>Nope! SiteShot just needs access to URL’s you want to capture.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="content-block content-block--right">
-        <div class="content-block__content">
-          <div class="typography typography--large">
-            <h2>What about different browsers & mobile?</h2>
-            <p>SiteShot can capture images across multiple browsers and resolutions. This means if your site is deployed and something looks wrong on mobile Opera, you will be notifed instantly.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-
-
-  <!-- email section 1 -->
   <div class="layout__section layout__section--white">
-    <div class="center center--1120">
+    <div class="center center--960">
 
 
-      <!-- signup component -->
-
-      <div class="signup">
-        <h1 class="signup__heading">Are you interested in testing?</h1>
-        <div class="signup__input">
-          <div class="form-brick">
-            <div class="form-brick__label">Join the beta waiting list</div>
-            <div class="form-brick__element">
-
-              <!-- swanky block -->
-              <div class="email-validation">
-                <div class="email-validation__element">
-                  <input class="input-style" type="email" placeholder="email@address.io">
-                </div>
-                <div class="email-validation__button">
-                  <button class="button button--40 button--purple">
-                    Submit
-                  </button>
-                  <button class="button button--40 button--disabled">
-                    <div class="button__icon">
-                      <div class="aperture aperture--24 aperture--white">
-                        <div class="aperture__ring"></div>
-                        <div class="aperture__icon"></div>
-                      </div>
-                    </div>
-                  </button>
-                </div>
-              </div>
+      <div class="content-block clearfix">
+        <div class="content-block__content">
+          <div class="content-section">
+            <div class="content-section__title">Why do I need SiteShot?</div>
+            <div class="content-section__content">
+              <p>SiteShot's purpose is to help you find visual changes in your site, post deployment.</p>
+              <p>To achieve this, We store a previous image of the requested.</p>
+              <p>Our goal is to prevent you from deploying broken pages without your knowledge.</p>
             </div>
           </div>
         </div>
-        <div class="form-brick__validation form-brick__validation--show">
-          <p>Invalid email address</p>
-        </div>
+        <div class="content-block__image content-block__image--1"></div>
       </div>
 
 
+      <div class="content-block clearfix">
+        <div class="content-block__content">
+          <div class="content-section">
+            <div class="content-section__title">How does it work?</div>
+            <div class="content-section__content">
+              <p>SiteShot takes a picture of selected pages from your website and compares them with past versions.</p>
+              <p>If changes are found, SiteShot will highlight the changes, and inform you with what has changed.</p>
+            </div>
+          </div>
+        </div>
+        <div class="content-block__image content-block__image--1"></div>
+      </div>
+
+
+      <div class="content-block clearfix">
+        <div class="content-block__content">
+          <div class="content-section">
+            <div class="content-section__title">Does SiteShot need access to my code?</div>
+            <div class="content-section__content">
+              <p>Nope! All SiteShot needs is a list of URL’s you want to test.</p>
+            </div>
+          </div>
+        </div>
+        <div class="content-block__image content-block__image--2"></div>
+      </div>
+
     </div>
   </div>
-
-
-
-
 </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -229,7 +182,16 @@
   <div class="center center--1120">
     <div class="shnappy-footer">
       <div class="shnappy-footer__shnappy">SiteShot 2016 &copy;</div>
-      <div class="shnappy-footer__name">SocialMediaLinks</div>
+      <div class="shnappy-footer__name">
+        <ul class="footer-external">
+          <li class="footer-external__item">
+            <a class="footer-external__link">Twitter</a>
+          </li>
+          <li class="footer-external__item">
+            <a class="footer-external__link">Facebook</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

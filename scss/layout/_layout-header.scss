@@ -4,13 +4,13 @@
 }
 .header-layout__logo {
   float: left;
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
 .header-logo {
   position: relative;
-  height: 32px;
-  padding: 0 0 0 44px;
+  height: 40px;
+  padding: 0 0 0 48px;
   display: block;
   //opacity: 0.8;
   &:hover,
@@ -24,15 +24,26 @@
 
 .header-logo__text {
   @include font-size(2.4);
-  color: white;
-  line-height: 32px;
+  display: block;
+  color: transparent;
+  width: 240px;
+  line-height: 40px;
   font-weight: bold;
   font-family: $font-family;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url('../images/logo/logotype.png');
 }
 .header-logo__mark {
   position: absolute;
+  width: 40px;
+  height: 40px;
   left: 0;
   top: 0;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-image: url('../images/logo/logomark.png');
+  background-position: center;
 }
 
 .header-logo--active {

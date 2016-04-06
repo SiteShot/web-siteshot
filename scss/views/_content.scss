@@ -1,6 +1,6 @@
 .content-block {
   position: relative;
-  padding: 80px 24px;
+  padding: 120px 24px;
   border-bottom: 1px solid $color-border-light;
   &:last-child {
     border: none;
@@ -15,6 +15,46 @@
 }
 
 .content-block__content {
-  width: 40%;
+  float: left;
+  width: 50%;
 }
-.content-block__image {}
+.content-block__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+.content-block__image--1 {
+  background: url('../images/landing/how-it-works-2.png') center no-repeat;
+}
+.content-block__image--2 {
+  background: url('../images/landing/no-code-3.png') center no-repeat;
+}
+
+
+
+// -----------------------
+
+.content-block {}
+
+
+
+.content-section {
+  max-width: 400px;
+}
+.content-section__title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 16px;
+}
+.content-section__content {
+
+  p {
+    color: rgba(black,0.72);
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 8px 0 16px;
+  }
+
+}

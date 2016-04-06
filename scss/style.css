@@ -527,17 +527,17 @@ html {
   padding-top: 56px;
   background-position: center;
   /* fallback */
-  background-color: #f55062;
+  background-color: #a526a7;
   /* Safari 4-5, Chrome 1-9 */
-  background: -webkit-gradient(linear, left top, right top, from(#557ba0), to(#f55062));
+  background: -webkit-gradient(linear, left top, right bottom, from(#e91e63), to(#a526a7));
   /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(left, #557ba0, #f55062);
+  background: -webkit-linear-gradient(top, #e91e63, #a526a7);
   /* Firefox 3.6+ */
-  background: -moz-linear-gradient(left, #557ba0, #f55062);
+  background: -moz-linear-gradient(top, #e91e63, #a526a7);
   /* IE 10 */
-  background: -ms-linear-gradient(left, #557ba0, #f55062);
+  background: -ms-linear-gradient(top, #e91e63, #a526a7);
   /* Opera 11.10+ */
-  background: -o-linear-gradient(left, #557ba0, #f55062); }
+  background: -o-linear-gradient(top, #e91e63, #a526a7); }
 
 .layout__banner-grid {
   width: 100%;
@@ -554,7 +554,6 @@ html {
   background: white; }
 
 .layout__section--border {
-  border-top: 2px solid #d9d9d9;
   border-bottom: 2px solid #d9d9d9; }
 
 .layout__footer {
@@ -572,12 +571,12 @@ html {
 
 .header-layout__logo {
   float: left;
-  padding: 12px 0; }
+  padding: 8px 0; }
 
 .header-logo {
   position: relative;
-  height: 32px;
-  padding: 0 0 0 44px;
+  height: 40px;
+  padding: 0 0 0 48px;
   display: block; }
   .header-logo:hover, .header-logo:active {
     opacity: 1; }
@@ -587,15 +586,26 @@ html {
 .header-logo__text {
   font-size: 24px;
   font-size: 2.4rem;
-  color: white;
-  line-height: 32px;
+  display: block;
+  color: transparent;
+  width: 240px;
+  line-height: 40px;
   font-weight: bold;
-  font-family: "lato", "Open Sans", Open-Sans, helvetica, arial; }
+  font-family: "lato", "Open Sans", Open-Sans, helvetica, arial;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("../images/logo/logotype.png"); }
 
 .header-logo__mark {
   position: absolute;
+  width: 40px;
+  height: 40px;
   left: 0;
-  top: 0; }
+  top: 0;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-image: url("../images/logo/logomark.png");
+  background-position: center; }
 
 .header-logo--active {
   color: #ffffff; }
@@ -619,6 +629,13 @@ html {
 
 .shnappy-footer__name {
   float: right; }
+
+.footer-external__item {
+  float: left;
+  padding: 0 16px; }
+
+.footer-external__link {
+  color: white; }
 
 .primary-wrap {
   padding: 24px 0 0;
@@ -921,11 +938,11 @@ html {
 .button--white-stroke {
   color: white;
   background: transparent;
-  border-color: rgba(255, 255, 255, 0.8); }
+  border-color: rgba(255, 255, 255, 0.6); }
   .button--white-stroke.button--hover, .button--white-stroke:focus, .button--white-stroke:hover {
     color: white;
     background: transparent;
-    border-color: rgba(255, 255, 255, 0.6); }
+    border-color: rgba(255, 255, 255, 0.8); }
   .button--white-stroke.button--active, .button--white-stroke:active {
     color: white;
     background: transparent;
@@ -1428,6 +1445,7 @@ html {
 .home-banner__title {
   font-size: 64px;
   font-size: 6.4rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   margin: 0 0 40px;
   line-height: 1.2;
   color: white;
@@ -1436,6 +1454,7 @@ html {
 .home-banner__message {
   font-size: 22px;
   font-size: 2.2rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   line-height: 1.4;
   color: white;
   text-align: center; }
@@ -1498,12 +1517,40 @@ html.csstransitions .banner-mockup--animate {
 
 .content-block {
   position: relative;
-  padding: 80px 24px;
+  padding: 120px 24px;
   border-bottom: 1px solid #d9d9d9; }
   .content-block:last-child {
     border: none; }
 
 .content-block__content {
-  width: 40%; }
+  float: left;
+  width: 50%; }
+
+.content-block__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%; }
+
+.content-block__image--1 {
+  background: url("../images/landing/how-it-works-2.png") center no-repeat; }
+
+.content-block__image--2 {
+  background: url("../images/landing/no-code-3.png") center no-repeat; }
+
+.content-section {
+  max-width: 400px; }
+
+.content-section__title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 16px; }
+
+.content-section__content p {
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 8px 0 16px; }
 
 /*# sourceMappingURL=style.css.map */
