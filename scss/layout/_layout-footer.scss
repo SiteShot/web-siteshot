@@ -1,25 +1,16 @@
 // footer
-.shnappy-footer {
+.footer {
   position: relative;
-  padding: 16px;
-  line-height: 24px;
-  color: white;
+  padding: 16px 0;
+  color: #616161;
+  border-top: 1px solid #e0e0e0;
   font-weight: bold;
   @include font-size(1.6);
 }
-.shnappy-footer__shnappy {
+.footer__copyright {
   float: left;
+  line-height: 32px;
 }
-.shnappy-footer__name {
+.footer__social {
   float: right;
-}
-
-
-.footer-external {}
-.footer-external__item {
-  float: left;
-  padding: 0 16px;
-}
-.footer-external__link {
-  color: white;
 }

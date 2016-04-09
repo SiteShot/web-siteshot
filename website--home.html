@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <title>SiteShot</title>
   <link rel="stylesheet" type="text/css" href="scss/style.css" />
-  <link rel="import" href="_partial--upgrade-modal.html">
-
   <script type="text/javascript" src="js/vendor/jquery-1.9.0.min.js"></script>
   <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
@@ -81,7 +79,7 @@
 <div class="layout__container">
 
   <!-- email section 1 -->
-  <div class="layout__section layout__section--white layout__section--border">
+  <div id="beta-input" class="layout__section layout__section--grey layout__section--border">
     <div class="center center--1120">
 
 
@@ -114,10 +112,10 @@
                 </div>
               </div>
             </div>
+            <div class="form-brick__validation form-brick__validation--show">
+              <p>Invalid email address</p>
+            </div>
           </div>
-        </div>
-        <div class="form-brick__validation form-brick__validation--show">
-          <p>Invalid email address</p>
         </div>
       </div>
 
@@ -125,22 +123,13 @@
     </div>
   </div>
 
-  <div class="layout__section layout__section--white">
+  <div class="layout__section layout__section--white layout__section--border">
     <div class="center center--960">
 
 
-      <div class="content-block clearfix">
-        <div class="content-block__content">
-          <div class="content-section">
-            <div class="content-section__title">Why do I need SiteShot?</div>
-            <div class="content-section__content">
-              <p>SiteShot's purpose is to help you find visual changes in your site, post deployment.</p>
-              <p>To achieve this, We store a previous image of the requested.</p>
-              <p>Our goal is to prevent you from deploying broken pages without your knowledge.</p>
-            </div>
-          </div>
-        </div>
-        <div class="content-block__image content-block__image--1"></div>
+      <div class="feature-block feature-block--border">
+        <div class="feature-block__heading">Deploy with confidence</div>
+        <div class="feature-block__content">SiteShot can check every page in your website for changes, before you deploy, Automatically, or click of a button.</div>
       </div>
 
 
@@ -149,8 +138,8 @@
           <div class="content-section">
             <div class="content-section__title">How does it work?</div>
             <div class="content-section__content">
-              <p>SiteShot takes a picture of selected pages from your website and compares them with past versions.</p>
-              <p>If changes are found, SiteShot will highlight the changes, and inform you with what has changed.</p>
+              <p>SiteShot compares new versions of your website with previous versions.</p>
+              <p>If changes are found, we will show you an image diff / highlight the changes, and send you a notification to let you know we found something.</p>
             </div>
           </div>
         </div>
@@ -163,7 +152,8 @@
           <div class="content-section">
             <div class="content-section__title">Does SiteShot need access to my code?</div>
             <div class="content-section__content">
-              <p>Nope! All SiteShot needs is a list of URL’s you want to test.</p>
+              <p>Nope!</p>
+              <p>Setting up SiteShot takes minutes, simply add the URL's of pages you want to test into our UI, Configure a webhook to trigger SiteShot to run when you deploy, and you're set.</p>
             </div>
           </div>
         </div>
@@ -172,6 +162,27 @@
 
     </div>
   </div>
+
+
+  <div class="layout__section layout__section--grey">
+    <div class="center center--1120">
+
+      <div class="padding-wrapper">
+        <div class="available">
+          <div class="available__headline">
+            Are you available for testing?
+          </div>
+          <div class="available__button">
+            <a class="button button--40 button--white-stroke" href="#beta-input">Join the beta waiting list!</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
 </div>
 
 
@@ -180,17 +191,17 @@
 <!-- layout__footer -->
 <div class="layout__footer">
   <div class="center center--1120">
-    <div class="shnappy-footer">
-      <div class="shnappy-footer__shnappy">SiteShot 2016 &copy;</div>
-      <div class="shnappy-footer__name">
-        <ul class="footer-external">
-          <li class="footer-external__item">
-            <a class="footer-external__link">Twitter</a>
-          </li>
-          <li class="footer-external__item">
-            <a class="footer-external__link">Facebook</a>
-          </li>
-        </ul>
+    <div class="footer clearfix">
+      <div class="footer__copyright">&copy; 2016 SiteShot</div>
+      <div class="footer__social">
+        <a href="https://twitter.com/siteshotapp" class="button button--blue button--32">
+          <div class="button-inner button-inner--icon-before">
+            <div class="button-inner__icon-before">
+              <span class="social-icon icon--24 twitter-icon"></span>
+            </div>
+            <div class="button-inner__text">Follow us on Twitter</div>
+          </div>
+        </a>
       </div>
     </div>
   </div>

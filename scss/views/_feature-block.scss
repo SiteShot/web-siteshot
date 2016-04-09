@@ -1,0 +1,24 @@
+// feature block
+
+.feature-block {
+  padding: 56px 0 80px;
+  text-align: center;
+  line-height: 1.6;
+  color: rgba(black,0.80);
+}
+
+.feature-block--border {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.feature-block__heading {
+  margin: 0 auto 16px;
+  max-width: 640px;
+  @include font-size(2.8);
+}
+.feature-block__content {
+  margin: 0 auto;
+  max-width: 640px;
+  font-size: 20px;
+  color: #616161;
+}

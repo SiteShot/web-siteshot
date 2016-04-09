@@ -45,6 +45,7 @@
 
 //--32
 .button--32 {
+  @include font-size(1.4);
   height: 32px;
   line-height: 24px;
   padding: 2px 12px;
@@ -185,9 +186,9 @@
 //--purple
 .button--purple {
   @include button-color(
-      $color-purple,
-      $color-purple-light,
-      $color-purple-dark
+      #9c27b0,
+      #BA68C8,
+      #7B1FA2
   );
 }
 .button--purple-stroke {
@@ -242,6 +243,9 @@
 .button-inner--icon-after {
   padding-right: 32px;
 }
+.button-inner--icon-before {
+  padding-left: 32px;
+}
 
 .button-inner__text {
   line-height: 24px;
@@ -250,6 +254,13 @@
   position: absolute;
   top: 0;
   right: 0;
+  width: 24px;
+  height: 24px;
+}
+.button-inner__icon-before {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 24px;
   height: 24px;
 }
