@@ -38,7 +38,7 @@ $first-color: #e91e63;//#c05a89;
 $last-color: #a526a7;
 
 .layout__banner {
-  padding-top: 56px;
+  padding: 56px 24px 0;
   background-position:center;
   @include verticalGradient($first-color,$last-color);
 }
