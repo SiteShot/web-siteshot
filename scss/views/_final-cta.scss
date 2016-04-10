@@ -11,11 +11,19 @@
   box-shadow: $shadow-box;
   position: relative;
   padding: 0 240px 0 0;
+  @include screen-mob {
+    padding: 0;
+  }
 }
 .available__headline {
   padding: 12px 24px;
   line-height: 40px;
   @include font-size(2.4);
+
+  @include screen-mob {
+    text-align: center;
+    @include font-size(2.2);
+  }
 }
 
 .available__button {
@@ -23,4 +31,8 @@
   top: 0;
   right: 0;
   padding: 12px 24px;
+  @include screen-mob {
+    padding: 0 12px 12px;
+    position: static;
+  }
 }

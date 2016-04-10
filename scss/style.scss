@@ -3,7 +3,7 @@
 
 $breakpoint-1: 1120px;
 $breakpoint-2: 960px;
-$breakpoint-3: 640px;
+$breakpoint-3: 720px;
 
 // _apply a natural box layout model to all elements
 *, *:before, *:after {
@@ -35,20 +35,16 @@ $breakpoint-3: 640px;
 // _components
 @import "components/_typography";
 @import "components/_module";
-//@import "components/_module-sidebar";
 @import "components/_button";
 @import "components/_button-pattern";
 @import "components/_dropdown";
 @import "components/_form";
 @import "components/_form-grid";
-@import "components/_form-credit";
 @import "components/_form-search";
 @import "components/_form-password";
-//@import "components/_breadcrumb";
-//@import "components/_switch";
-//@import "components/_switch-control";
-//@import "components/_modal";
-//@import "components/_modal-upgrade";
+@import "components/_breadcrumb";
+@import "components/_switch";
+@import "components/_switch-control";
 
 // _views
 //@import "views/";

@@ -10,7 +10,7 @@
 .header-logo {
   position: relative;
   height: 40px;
-  padding: 0 0 0 48px;
+  padding: 0 0 0 56px;
   display: block;
   //opacity: 0.8;
   &:hover,
@@ -23,16 +23,18 @@
 }
 
 .header-logo__text {
-  @include font-size(2.4);
+  @include font-size(2.2);
   display: block;
-  color: transparent;
+  color: white;
   width: 240px;
   line-height: 40px;
   font-weight: bold;
   font-family: $font-family;
   background-repeat: no-repeat;
   background-position: left center;
-  background-image: url('../images/logo/logotype.png');
+  @include screen-mob {
+    display: none;
+  }
 }
 .header-logo__mark {
   position: absolute;
@@ -42,9 +44,16 @@
   top: 0;
   background-size: 40px;
   background-repeat: no-repeat;
-  background-image: url('../images/logo/logomark.png');
+  background-image: url('../images/logo/siteshot_mark-40x40.png');
   background-position: center;
 }
+
+html.svg {
+  .header-logo__mark {
+    background-image: url('../images/logo/siteshot_mark-40x40.svg');
+  }
+}
+
 
 .header-logo--active {
   color: $text-white;

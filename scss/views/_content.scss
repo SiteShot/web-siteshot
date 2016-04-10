@@ -1,51 +1,81 @@
 .content-block {
-  position: relative;
-  padding: 24px 0;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
   border-bottom: 1px solid $color-border-light;
   &:last-child {
     border: none;
   }
+  @include screen-mob {
+    padding: 40px 0;
+  }
 }
 
 .content-block__content {
-  float: left;
   width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 80px 0;
+  @include screen-mob {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
 }
-.content-block__image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
+
+
+
+
+
+// illustration blocks
+.illustration {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include screen-mob {
+    padding: 24px 0 0;
+  }
 }
-.content-block__image--1 {
-  background: url('../images/landing/how-it-works-2.png') center no-repeat;
+.illustration--how-it-works {
+  margin: 0 auto;
+  max-width: 440px;
+  background-image: url('../images/landing/how-it-works-4.svg');
+  background-image: url('../images/landing/how-it-works-4.png');
 }
-.content-block__image--2 {
-  background: url('../images/landing/no-code-3.png') center no-repeat;
+
+.illustration--no-code {
+  margin: 0 auto;
+  max-width: 240px;
+  background-image: url('../images/landing/no-code-3.png');
 }
 
 
 
 // -----------------------
 .content-section {
-  max-width: 400px;
+  max-width: 440px;
+  padding: 0 40px 0 0;
   line-height: 1.6;
-  display: table-cell;
-  vertical-align: middle;
-  height: 500px;
+  @include screen-mob {
+    padding: 0;
+  }
 }
 .content-section__title {
   font-size: 28px;
   font-weight: 600;
   margin: 0 0 16px;
+  @include screen-mob {
+    @include font-size(2.2);
+  }
 }
-.content-section__content {
 
+.content-section__content {
   p {
     color: rgba(black,0.72);
     font-size: 18px;
     margin: 8px 0 16px;
+    @include screen-mob {
+      @include font-size(1.6);
+    }
   }
-
 }
